@@ -1,10 +1,11 @@
 {
- "name": "Card Flip Calc",
- "short_name": "CardFlip",
+ "name": "GradeOrFlip",
+ "short_name": "GradeOrFlip",
+ "description": "Grade it or flip it raw? Know before you ship.",
  "start_url": "./",
  "display": "standalone",
  "background_color": "#0b1020",
- "theme_color": "#ea580c",
+ "theme_color": "#f97316",
  "icons": [
   {
    "src": "favicon.svg",

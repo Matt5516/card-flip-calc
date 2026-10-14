@@ -1,4 +1,4 @@
-# Card Flip Calc
+# GradeOrFlip
 
 > Free card grading calculator: compare PSA, SGC, BGS and CGC fees, shipping and eBay fees to see profit, break-even and the odds of a 10 you need to submit.
 
@@ -7,7 +7,7 @@ Last updated: 2026-10-14
 Cost: free, no signup, runs in the browser.
 
 ## Key facts
-- Card Flip Calc compares selling a trading card raw against grading it with PSA, SGC, BGS or CGC, after grading fees, shipping and eBay fees.
+- GradeOrFlip compares selling a trading card raw against grading it with PSA, SGC, BGS or CGC, after grading fees, shipping and eBay fees.
 - Formula: net profit at a grade = sale price - eBay fees - shipping to buyer - (card cost + grading fee + shipping to grader + return shipping).
 - eBay trading card fee (Oct 2026): 13.25% of total sale up to $7,500 + 2.35% above, + $0.40 per order ($0.30 if $10 or less).
 - PSA (Oct 14, 2026): Standard $59.99 (≤$1,000), Priority $79.99 (≤$1,500), Express $199 (≤$2,500), Super Express $349, Premier $599. Value tiers paused.
@@ -15,6 +15,37 @@ Cost: free, no signup, runs in the browser.
 - Beckett BGS (Oct 14, 2026): Express only, $79.95 with subgrades; Base and Standard paused.
 - CGC (Oct 14, 2026): Bulk $17 (25-card min, ≤$500), Economy $20, Standard $55, Express $100, WalkThrough $300.
 - Worked example: $40 card, $60 raw, PSA Standard $59.99, $5 in, $8 back, $5 out: total cost $112.99, break-even graded sale $136.47, PSA 10 at $150 nets $11.73 vs $6.65 raw.
+
+## Guides
+- [PSA grading fees 2026](https://matt5516.github.io/card-flip-calc/psa-grading-fees/): PSA grading prices as of Oct 14, 2026: every service tier, max declared value, turnaround and the sale price a card needs to cover the fee.
+- [SGC grading fees 2026](https://matt5516.github.io/card-flip-calc/sgc-grading-fees/): SGC grading prices as of Oct 14, 2026: every service tier, max declared value, turnaround and the sale price a card needs to cover the fee.
+- [BGS grading fees 2026](https://matt5516.github.io/card-flip-calc/bgs-grading-fees/): Beckett (BGS) grading prices as of Oct 14, 2026: every service tier, max declared value, turnaround and the sale price a card needs to cover the fee.
+- [CGC grading fees 2026](https://matt5516.github.io/card-flip-calc/cgc-grading-fees/): CGC Cards grading prices as of Oct 14, 2026: every service tier, max declared value, turnaround and the sale price a card needs to cover the fee.
+- [Worth grading a $10 card?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-a-10-dollar-card/): Grading a card worth $10 raw: total cost at PSA, SGC, BGS and CGC, the sale price you need to break even, and the PSA 10 odds needed to beat selling raw.
+- [Worth grading a $25 card?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-a-25-dollar-card/): Grading a card worth $25 raw: total cost at PSA, SGC, BGS and CGC, the sale price you need to break even, and the PSA 10 odds needed to beat selling raw.
+- [Worth grading a $50 card?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-a-50-dollar-card/): Grading a card worth $50 raw: total cost at PSA, SGC, BGS and CGC, the sale price you need to break even, and the PSA 10 odds needed to beat selling raw.
+- [Worth grading a $100 card?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-a-100-dollar-card/): Grading a card worth $100 raw: total cost at PSA, SGC, BGS and CGC, the sale price you need to break even, and the PSA 10 odds needed to beat selling raw.
+- [Worth grading a $250 card?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-a-250-dollar-card/): Grading a card worth $250 raw: total cost at PSA, SGC, BGS and CGC, the sale price you need to break even, and the PSA 10 odds needed to beat selling raw.
+- [Worth grading a $500 card?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-a-500-dollar-card/): Grading a card worth $500 raw: total cost at PSA, SGC, BGS and CGC, the sale price you need to break even, and the PSA 10 odds needed to beat selling raw.
+- [Worth grading Pokémon cards?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-pokemon-cards/): When grading Pokémon cards pays off and when to sell raw: grading costs in 2026, break-even math and what to check before you submit.
+- [Worth grading rookie cards?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-sports-rookie-cards/): When grading rookie cards pays off and when to sell raw: grading costs in 2026, break-even math and what to check before you submit.
+- [Worth grading vintage cards?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-vintage-cards/): When grading vintage cards pays off and when to sell raw: grading costs in 2026, break-even math and what to check before you submit.
+- [Worth grading autographed cards?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-autograph-cards/): When grading autographed cards pays off and when to sell raw: grading costs in 2026, break-even math and what to check before you submit.
+- [Worth grading base cards?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-base-cards/): When grading base cards pays off and when to sell raw: grading costs in 2026, break-even math and what to check before you submit.
+- [Worth grading numbered parallels?](https://matt5516.github.io/card-flip-calc/is-it-worth-grading-numbered-parallels/): When grading numbered parallels pays off and when to sell raw: grading costs in 2026, break-even math and what to check before you submit.
+- [PSA vs SGC](https://matt5516.github.io/card-flip-calc/psa-vs-sgc/): PSA vs SGC in 2026: fees, turnaround and resale side by side, plus how to decide which one makes you more money on a specific card.
+- [PSA vs BGS](https://matt5516.github.io/card-flip-calc/psa-vs-bgs/): PSA vs BGS in 2026: fees, turnaround and resale side by side, plus how to decide which one makes you more money on a specific card.
+- [PSA vs CGC](https://matt5516.github.io/card-flip-calc/psa-vs-cgc/): PSA vs CGC in 2026: fees, turnaround and resale side by side, plus how to decide which one makes you more money on a specific card.
+- [SGC vs CGC](https://matt5516.github.io/card-flip-calc/sgc-vs-cgc/): SGC vs CGC in 2026: fees, turnaround and resale side by side, plus how to decide which one makes you more money on a specific card.
+- [BGS vs SGC](https://matt5516.github.io/card-flip-calc/bgs-vs-sgc/): BGS vs SGC in 2026: fees, turnaround and resale side by side, plus how to decide which one makes you more money on a specific card.
+- [Best card grading company](https://matt5516.github.io/card-flip-calc/best-card-grading-company/): PSA, SGC, Beckett and CGC compared for 2026: cheapest tiers, turnaround, value caps and how to pick the one that nets the most for your card.
+- [Grading calculators compared](https://matt5516.github.io/card-flip-calc/card-grading-calculators-compared/): Free card grading and ROI calculators compared: which graders each covers, eBay fees, break-even, odds of a 10, share links and more.
+- [eBay fees for trading cards](https://matt5516.github.io/card-flip-calc/ebay-fees-trading-cards/): eBay trading card fees in 2026: 13.25% up to $7,500 and 2.35% above, plus $0.30–$0.40 per order. Free calculator and a table of what you net at each price.
+- [Break-even price formula](https://matt5516.github.io/card-flip-calc/break-even-price-graded-card/): The exact formula for the sale price a graded card needs to cover the card, grading fee, shipping and eBay fees, with worked examples.
+- [Odds of a 10 you need](https://matt5516.github.io/card-flip-calc/gem-rate-break-even/): The chance of a PSA 10 you need before grading beats selling raw, by raw value and 10-to-raw price multiple. Table plus formula.
+- [Bulk submission planner](https://matt5516.github.io/card-flip-calc/bulk-grading-planner/): List your cards with raw and graded prices. The planner splits shipping, picks the cheapest tier and tells you which cards to send for grading.
+- [Grading upcharges explained](https://matt5516.github.io/card-flip-calc/what-is-a-grading-upcharge/): Why graders bill extra when a card comes back worth more than its tier’s value cap, what it costs, and how to declare value to avoid surprises.
+- [How to submit cards](https://matt5516.github.io/card-flip-calc/how-to-submit-cards-for-grading/): A step-by-step checklist for submitting cards to PSA, SGC, Beckett or CGC: pick cards, pick a tier, pack safely, ship insured and track the return.
 
 ## FAQ
 ### Is it worth grading my card?
@@ -48,5 +79,5 @@ It depends on the gap between the 10 price and the other grades. The calculator 
 For a card worth under $500 in a 25-card order, CGC Bulk at $17 is the cheapest open tier as of October 14, 2026. For single cards, SGC Standard at $50 and PSA Standard at $59.99 are the cheapest open options. The best company also depends on what each slab sells for, so compare expected profit, not just the fee.
 
 ## Related tools
-- [Open Enrollment Calc](https://matt5516.github.io/open-enrollment-calc/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
-- [Fantasy Tools](https://matt5516.github.io/fantasy-tools/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
+- [EnrollMath](https://matt5516.github.io/open-enrollment-calc/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
+- [DynastyMath](https://matt5516.github.io/fantasy-tools/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
