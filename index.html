@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Card Grading Calculator: Is It Worth Grading? PSA, SGC, BGS, CGC (2026)</title>
+<meta name="description" content="Free card grading and flip calculator. Compare PSA, SGC, BGS and CGC fees, shipping and eBay fees to see profit and break-even by grade before you submit.">
+<link rel="canonical" href="https://matt5516.github.io/card-flip-calc/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Card Grading & Flip Calculator">
+<meta property="og:description" content="Is it worth grading? Profit and break-even per grade for PSA, SGC, BGS and CGC, after eBay fees.">
+<meta property="og:url" content="https://matt5516.github.io/card-flip-calc/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1f6feb">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<!-- AD NETWORK HEAD SCRIPT GOES HERE (e.g. AdSense). Intentionally empty. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","name":"Card Grading & Flip Calculator","url":"https://matt5516.github.io/card-flip-calc/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Compare grading fees, shipping and eBay fees to see profit and break-even by grade."},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How do I know if a card is worth grading?","acceptedAnswer":{"@type":"Answer","text":"Compare what you would net selling the card raw with what you would net selling it graded at each likely grade, after grading fees, shipping and eBay fees. If the probability-weighted graded profit does not clearly beat the raw profit, selling raw is usually the better move."}},
+{"@type":"Question","name":"What are eBay's fees for trading cards?","acceptedAnswer":{"@type":"Answer","text":"As of October 2026, eBay's standard final value fee for trading cards is 13.25% of the total sale up to $7,500 plus 2.35% of the portion above $7,500, plus a per-order fee of $0.30 (orders of $10 or less) or $0.40."}}
+]}]}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="./">Card Flip Calc</a><nav class="site"><a href="#tool">Calculator</a><a href="#sources">Fees &amp; sources</a></nav></div></header>
+<main class="wrap">
+  <div class="ad-slot ad-leaderboard" data-ad-slot="top-leaderboard"></div>
+  <h1>Card Grading &amp; Flip Calculator</h1>
+  <p class="lede">Is it worth grading? Enter what you paid, what it sells for raw, and what it sells for at each grade. See total cost, profit and break-even per grade after grading fees, shipping and eBay fees.</p>
+
+  <section id="tool" class="card">
+    <h2>1. The card</h2>
+    <div class="grid cols-2">
+      <div><label for="cardCost">What you paid for the card ($)</label><input id="cardCost" type="number" inputmode="decimal" min="0" step="0.01" value="40"></div>
+      <div><label for="rawValue">Expected raw sale price ($)</label><input id="rawValue" type="number" inputmode="decimal" min="0" step="0.01" value="60"><span class="hint">Use recent sold comps, not asking prices.</span></div>
+    </div>
+    <h2 style="margin-top:16px">2. Grading</h2>
+    <div class="grid cols-2">
+      <div><label for="company">Grading company</label><select id="company"></select></div>
+      <div><label for="tier">Service tier</label><select id="tier"></select></div>
+      <div><label for="gradingFee">Grading fee per card ($)</label><input id="gradingFee" type="number" inputmode="decimal" min="0" step="0.01"><span class="hint" id="tierNote"></span></div>
+      <div><label for="shipToGrader">Shipping to grader, per card ($)</label><input id="shipToGrader" type="number" inputmode="decimal" min="0" step="0.01" value="5"><span class="hint">Your postage divided by cards in the order.</span></div>
+      <div><label for="returnShip">Return shipping + insurance, per card ($)</label><input id="returnShip" type="number" inputmode="decimal" min="0" step="0.01" value="8"><span class="hint">Grader's return charge divided by cards in the order.</span></div>
+      <div><label for="otherCosts">Other costs (supplies, membership share) ($)</label><input id="otherCosts" type="number" inputmode="decimal" min="0" step="0.01" value="0"></div>
+    </div>
+    <h2 style="margin-top:16px">3. Expected graded values</h2>
+    <p class="hint">Sold price at each grade. Odds are optional; add them to get a probability-weighted answer.</p>
+    <div class="table-scroll"><table id="gradeInputs"><thead><tr><th>Grade</th><th>Sale price ($)</th><th>Odds (%)</th></tr></thead><tbody></tbody></table></div>
+    <h2 style="margin-top:16px">4. Selling on eBay</h2>
+    <div class="grid cols-3">
+      <div><label for="fvfRate">Final value fee (%)</label><input id="fvfRate" type="number" inputmode="decimal" min="0" step="0.01" value="13.25"><span class="hint">Trading cards, up to $7,500.</span></div>
+      <div><label for="taxRate">Buyer sales tax (%)</label><input id="taxRate" type="number" inputmode="decimal" min="0" step="0.1" value="0"><span class="hint">eBay charges its fee on tax too. Typical: 6–9%.</span></div>
+      <div><label for="shipOut">Your shipping cost to buyer ($)</label><input id="shipOut" type="number" inputmode="decimal" min="0" step="0.01" value="5"></div>
+    </div>
+  </section>
+
+  <section class="card" id="results" aria-live="polite"></section>
+  <div class="ad-slot ad-inline" data-ad-slot="in-content"></div>
+
+  <section class="card">
+    <h2>How the math works</h2>
+    <p><strong>Total cost</strong> = card cost + grading fee + shipping to grader + return shipping + other costs.</p>
+    <p><strong>Net profit</strong> at a grade = sale price − eBay fees − your shipping to the buyer − total cost.</p>
+    <p><strong>eBay fee</strong> = final value fee % × (sale price + sales tax), up to $7,500, plus 2.35% above $7,500, plus $0.30 per order ($0.40 over $10).</p>
+    <p><strong>Break-even</strong> = the lowest sale price where the net after eBay fees and shipping covers your total cost.</p>
+    <p><strong>Recommendation</strong> compares the probability-weighted graded profit to the profit from selling raw today.</p>
+  </section>
+
+  <section class="card signup" id="signup">
+    <h2>Get fee-change alerts</h2>
+    <p class="hint">Grading prices change often. Get a short email when PSA, SGC, BGS or CGC change fees.</p>
+    <!-- EMAIL SIGNUP PLACEHOLDER: replace with newsletter provider embed (e.g. beehiiv). Not connected. -->
+    <form data-signup-placeholder><label class="sr-only" for="email">Email</label><input id="email" type="email" placeholder="you@example.com" required><button type="submit">Notify me</button></form>
+    <p class="hint signup-msg"></p>
+  </section>
+
+  <section class="card" id="sources">
+    <h2>Fees used and sources</h2>
+    <p class="sources">Prices were checked on <strong id="checked"></strong> from each company's official page. Grading companies change prices and pause tiers often, so confirm before you ship. You can edit any fee above.</p>
+    <ul class="sources" id="sourceList"></ul>
+    <p class="sources">Estimates only, not financial advice. Grades are never guaranteed. Not affiliated with PSA, SGC, Beckett, CGC or eBay.</p>
+  </section>
+  <div class="ad-slot ad-footer" data-ad-slot="footer"></div>
+</main>
+<footer class="site"><div class="wrap">© 2026 Card Flip Calc · Free tool · <a href="privacy.html">Privacy</a></div></footer>
+<script src="assets/common.js" defer></script>
+<script src="assets/fees.js" defer></script>
+<script src="assets/calc.js" defer></script>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
