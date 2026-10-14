@@ -16,6 +16,13 @@ Cost: free, no signup, runs in the browser.
 - CGC (Oct 14, 2026): Bulk $17 (25-card min, ≤$500), Economy $20, Standard $55, Express $100, WalkThrough $300.
 - Worked example: $40 card, $60 raw, PSA Standard $59.99, $5 in, $8 back, $5 out: total cost $112.99, break-even graded sale $136.47, PSA 10 at $150 nets $11.73 vs $6.65 raw.
 
+## Tools (one page each)
+- [Grading calculator](https://matt5516.github.io/card-flip-calc/grading-calculator/): Free card grading calculator. Enter the raw price and what a 10 and a 9 sell for to see profit after grading fees, shipping and eBay fees, plus your break-even odds. How it works: We compare selling raw with grading: the chance of each grade × its sold price, minus the grading fee, shipping and eBay fees. Fees are 2026 official prices.
+- [Bulk submission planner](https://matt5516.github.io/card-flip-calc/bulk-planner/): List your cards with raw and graded prices. The planner splits shipping, picks the cheapest tier and tells you which cards to send for grading. How it works: Each card is checked like the main calculator; shipping is split across the order, and bulk tiers unlock automatically at their minimums.
+- [eBay fee calculator](https://matt5516.github.io/card-flip-calc/ebay-fee-calculator/): Free eBay fee calculator for trading cards: final value fee, per-order fee, sales tax and shipping, with your take-home and profit for any sale price. How it works: eBay charges its trading-card final value fee on the total including shipping and sales tax, plus a per-order fee. Rates are editable under Advanced options.
+- [Turnaround tracker](https://matt5516.github.io/card-flip-calc/turnaround-tracker/): Track PSA, SGC, CGC and BGS submissions in one list. Enter the date you shipped and the tier to see an estimated return date. Saved only in your browser. How it works: We add the grader’s posted business-day turnaround for your tier to the date they received your order. Estimates only; graders’ real times vary.
+- [Submission checklist](https://matt5516.github.io/card-flip-calc/submission-checklist/): A printable 12-step checklist for submitting cards to PSA, SGC, CGC or BGS: cleaning, sleeves, declared values, packing and insurance. Saved in your browser. How it works: Tick items as you finish them; your progress stays in this browser. Print it to keep with your order.
+
 ## Guides
 - [PSA grading fees 2026](https://matt5516.github.io/card-flip-calc/psa-grading-fees/): PSA grading prices as of Oct 14, 2026: every service tier, max declared value, turnaround and the sale price a card needs to cover the fee.
 - [SGC grading fees 2026](https://matt5516.github.io/card-flip-calc/sgc-grading-fees/): SGC grading prices as of Oct 14, 2026: every service tier, max declared value, turnaround and the sale price a card needs to cover the fee.
@@ -43,7 +50,6 @@ Cost: free, no signup, runs in the browser.
 - [eBay fees for trading cards](https://matt5516.github.io/card-flip-calc/ebay-fees-trading-cards/): eBay trading card fees in 2026: 13.25% up to $7,500 and 2.35% above, plus $0.30–$0.40 per order. Free calculator and a table of what you net at each price.
 - [Break-even price formula](https://matt5516.github.io/card-flip-calc/break-even-price-graded-card/): The exact formula for the sale price a graded card needs to cover the card, grading fee, shipping and eBay fees, with worked examples.
 - [Odds of a 10 you need](https://matt5516.github.io/card-flip-calc/gem-rate-break-even/): The chance of a PSA 10 you need before grading beats selling raw, by raw value and 10-to-raw price multiple. Table plus formula.
-- [Bulk submission planner](https://matt5516.github.io/card-flip-calc/bulk-grading-planner/): List your cards with raw and graded prices. The planner splits shipping, picks the cheapest tier and tells you which cards to send for grading.
 - [Grading upcharges explained](https://matt5516.github.io/card-flip-calc/what-is-a-grading-upcharge/): Why graders bill extra when a card comes back worth more than its tier’s value cap, what it costs, and how to declare value to avoid surprises.
 - [How to submit cards](https://matt5516.github.io/card-flip-calc/how-to-submit-cards-for-grading/): A step-by-step checklist for submitting cards to PSA, SGC, Beckett or CGC: pick cards, pick a tier, pack safely, ship insured and track the return.
 

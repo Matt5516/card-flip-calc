@@ -25,5 +25,6 @@ addEventListener('DOMContentLoaded', function(){
   if(q.get('g')) $('bkG').value=q.get('g'); if(q.get('s')) $('bkShip').value=q.get('s');
   init.forEach(addRow); rows.addEventListener('input',UI.debounce(run,120)); ['bkG','bkShip','bkOut'].forEach(function(i){ $(i).addEventListener('input',run); });
   $('bkAdd').onclick=function(){ addRow(); run(); rows.rows[rows.rows.length-1].querySelector('input').focus(); };
+  $('bkSaved').onclick=function(){ var L=UI.store.get('gof-saved',[]); if(!L.length){ UI.toast('No saved cards yet. Use Save card in the grading calculator.'); return; } L.forEach(function(c){ addRow([c.name,c.raw||0,c.ten||0,c.nine||0,c.odds10||25]); }); run(); UI.toast(L.length+' saved cards added'); };
   $('bkShare').onclick=function(){ UI.copy(location.href,'Link copied'); }; run();
 });
