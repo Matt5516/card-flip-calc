@@ -5,8 +5,9 @@
     opt = opt || {};
     var e = opt.ebay, total = price * (1 + (opt.taxRate||0)) + (opt.buyerShipping||0);
     if (price <= 0) return 0;
+    if (e.rate===0 && e.noPerOrder) return 0;
     var pct = e.rate * Math.min(total, e.threshold) + e.rateAbove * Math.max(0, total - e.threshold);
-    var perOrder = total <= e.smallMax ? e.perOrderSmall : e.perOrderLarge;
+    var perOrder = e.noPerOrder ? 0 : (total <= e.smallMax ? e.perOrderSmall : e.perOrderLarge);
     return round2(pct + perOrder);
   }
   function net(price, opt){ return price + (opt.buyerShipping||0) - ebayFee(price,opt) - (opt.shipOut||0); }
@@ -38,19 +39,55 @@
     });
     var expected = probSum>0 ? round2(ev/probSum) : null;
     var rec;
-    if (!rows.length) rec = {level:'warn', text:'Enter at least one expected graded value.'};
+    if (!rows.length) rec = {level:'warn', word:'Add values', text:'Enter at least one expected graded value.'};
     else {
       var cmp = expected!==null ? expected : rows[0].profit; // fall back to best listed grade
       var basis = expected!==null ? 'probability-weighted' : 'top-grade';
-      if (rawProfit!==null && cmp <= rawProfit) rec = {level:'bad', text:'Sell raw. Your '+basis+' graded profit ('+fmt(cmp)+') does not beat selling raw ('+fmt(rawProfit)+').'};
-      else if (cmp < 0) rec = {level:'bad', text:'Skip grading. The '+basis+' result is a loss of '+fmt(-cmp)+'.'};
-      else if (rawProfit!==null && cmp - rawProfit < gradeCost*0.5) rec = {level:'warn', text:'Marginal. Grading adds only '+fmt(cmp-rawProfit)+' over selling raw for the risk and wait. Grade only if you are confident in the grade.'};
-      else rec = {level:'good', text:'Grade it. The '+basis+' profit is '+fmt(cmp)+(rawProfit!==null?' vs '+fmt(rawProfit)+' selling raw':'')+'.'};
+      if (rawProfit!==null && cmp <= rawProfit) rec = {level:'bad', word:'Sell raw', text:'Sell raw. Your '+basis+' graded profit ('+fmt(cmp)+') does not beat selling raw ('+fmt(rawProfit)+').'};
+      else if (cmp < 0) rec = {level:'bad', word:'Skip it', text:'Skip grading. The '+basis+' result is a loss of '+fmt(-cmp)+'.'};
+      else if (rawProfit!==null && cmp - rawProfit < gradeCost*0.5) rec = {level:'warn', word:'Borderline', text:'Borderline. Grading adds only '+fmt(cmp-rawProfit)+' over selling raw for the risk and wait. Grade only if you are confident in the grade.'};
+      else rec = {level:'good', word:'Grade it', text:'Grade it. The '+basis+' profit is '+fmt(cmp)+(rawProfit!==null?' vs '+fmt(rawProfit)+' selling raw':'')+'.'};
       if (expected===null) rec.text += ' Add grade odds for a more realistic answer.';
     }
     return {gradeCost:round2(gradeCost), totalCost:round2(totalCost), rawFees:rawFees, rawProfit:rawProfit, breakEven:be, rows:rows, expected:expected, rec:rec};
   }
+
+  // Cheapest open tier whose max declared value covers `value` (null maxValue = no cap). cards = submission size (Bulk needs 25).
+  function autoTier(grader, value, cards){
+    var best=null;
+    grader.tiers.forEach(function(t,i){
+      if (t.minCards && (cards||1) < t.minCards) return;
+      if (t.maxValue!=null && value > t.maxValue) return;
+      if (!best || t.fee < best.tier.fee) best={index:i, tier:t};
+    });
+    return best; // null => no tier covers this value
+  }
+  // Probability of the top grade needed for the expected profit to equal `target`, other grades keeping their relative odds.
+  function topGradeOddsNeeded(rows, target){
+    if (!rows.length) return null;
+    var top=rows[0], rest=rows.slice(1), w=rest.reduce(function(t,r){return t+(r.prob||0);},0);
+    var other = rest.length ? (w>0 ? rest.reduce(function(t,r){return t+(r.prob||0)*r.profit;},0)/w : rest.reduce(function(t,r){return t+r.profit;},0)/rest.length) : 0;
+    if (top.profit===other) return top.profit>=target?0:null;
+    var q=(target-other)/(top.profit-other);
+    if (q<=0) return 0; if (q>1) return null; // null => not reachable even at 100%
+    return Math.round(q*1000)/10;
+  }
+  // Lowest grade (rows ordered best->worst) whose profit beats selling raw (or breaks even when no raw value).
+  function lowestWinningGrade(rows, rawProfit){
+    var bar = rawProfit===null ? 0 : rawProfit, win=null;
+    rows.forEach(function(r){ if (r.profit > bar) win=r; });
+    return win;
+  }
+  // Run the analysis for every grader at its cheapest eligible tier.
+  function compareGraders(base, FEES, declaredValue, cards){
+    return Object.keys(FEES.graders).map(function(k){
+      var g=FEES.graders[k], t=autoTier(g, declaredValue, cards);
+      if (!t) return {grader:k, available:false};
+      var r=analyze(Object.assign({}, base, {gradingFee:t.tier.fee, tierMax:t.tier.maxValue}));
+      return {grader:k, available:true, tier:t.tier, tierIndex:t.index, expected:r.expected, top:r.rows.length?r.rows[0].profit:null, totalCost:r.totalCost, breakEven:r.breakEven};
+    }).sort(function(a,b){ if(!a.available) return 1; if(!b.available) return -1; var av=a.expected!==null?a.expected:a.top, bv=b.expected!==null?b.expected:b.top; return bv-av; });
+  }
   function fmt(n){ return (n<0?'-$':'$')+Math.abs(n).toFixed(2); }
-  var api = {ebayFee:ebayFee, breakEven:breakEven, analyze:analyze};
+  var api = {ebayFee:ebayFee, breakEven:breakEven, analyze:analyze, autoTier:autoTier, topGradeOddsNeeded:topGradeOddsNeeded, lowestWinningGrade:lowestWinningGrade, compareGraders:compareGraders};
   if (typeof module!=='undefined' && module.exports) module.exports = api; else root.FlipCalc = api;
 })(this);

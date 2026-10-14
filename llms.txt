@@ -1,0 +1,52 @@
+# Card Flip Calc
+
+> Free card grading calculator: compare PSA, SGC, BGS and CGC fees, shipping and eBay fees to see profit, break-even and the odds of a 10 you need to submit.
+
+URL: https://matt5516.github.io/card-flip-calc/
+Last updated: 2026-10-14
+Cost: free, no signup, runs in the browser.
+
+## Key facts
+- Card Flip Calc compares selling a trading card raw against grading it with PSA, SGC, BGS or CGC, after grading fees, shipping and eBay fees.
+- Formula: net profit at a grade = sale price - eBay fees - shipping to buyer - (card cost + grading fee + shipping to grader + return shipping).
+- eBay trading card fee (Oct 2026): 13.25% of total sale up to $7,500 + 2.35% above, + $0.40 per order ($0.30 if $10 or less).
+- PSA (Oct 14, 2026): Standard $59.99 (≤$1,000), Priority $79.99 (≤$1,500), Express $199 (≤$2,500), Super Express $349, Premier $599. Value tiers paused.
+- SGC (Oct 14, 2026): $50 (≤$1,500), $85 (≤$3,500) standard; expedited from $150.
+- Beckett BGS (Oct 14, 2026): Express only, $79.95 with subgrades; Base and Standard paused.
+- CGC (Oct 14, 2026): Bulk $17 (25-card min, ≤$500), Economy $20, Standard $55, Express $100, WalkThrough $300.
+- Worked example: $40 card, $60 raw, PSA Standard $59.99, $5 in, $8 back, $5 out: total cost $112.99, break-even graded sale $136.47, PSA 10 at $150 nets $11.73 vs $6.65 raw.
+
+## FAQ
+### Is it worth grading my card?
+Grading is worth it when the probability-weighted profit from selling graded beats what you would net selling raw today, after grading fees, shipping both ways and selling fees. If only a 10 makes money and your odds of a 10 are low, selling raw is usually better.
+
+### How much does PSA grading cost in 2026?
+As of October 14, 2026, PSA charges $59.99 per card for Standard (up to $1,000 declared value, 90-100 business days), $79.99 for Priority (up to $1,500), $199 for Express (up to $2,500), $349 for Super Express (up to $5,000) and $599 for Premier (up to $10,000). PSA's Value and Value Bulk tiers are paused.
+
+### How much does SGC grading cost?
+As of October 14, 2026, SGC charges $50 per standard-size card declared up to $1,500 and $85 up to $3,500 at Standard (40+ business days). Expedited (2-3 business days) is $150 up to $3,500 and rises to $2,000 for cards up to $100,000.
+
+### How much does Beckett (BGS) grading cost right now?
+As of October 14, 2026, Beckett only accepts Express submissions, at $79.95 per card with subgrades and about 15 business days, through a temporary submission form. Base and Standard are paused.
+
+### How much does CGC card grading cost?
+As of October 14, 2026, CGC Cards charges $17 per card for Bulk (25-card minimum, up to $500 value), $20 for Economy (up to $1,000), $55 for Standard (up to $3,000), $100 for Express (up to $10,000) and $300 for WalkThrough (up to $100,000). Paid members save 10-20%.
+
+### What are eBay's fees for selling trading cards?
+eBay's standard final value fee for trading cards is 13.25% of the total sale up to $7,500, plus 2.35% on the portion above $7,500, plus a $0.40 per-order fee ($0.30 if the order is $10 or less). The total includes shipping charged to the buyer and sales tax.
+
+### What is a grading upcharge?
+An upcharge happens when the grader decides your card is worth more than the maximum declared value of the tier you paid for. They move it to a higher tier and bill you the difference. This calculator warns you when any grade value is above the selected tier's limit.
+
+### How do I calculate the break-even price for a graded card?
+Break-even is the lowest sale price where the money left after selling fees and shipping covers your total cost: what you paid for the card plus grading fee, shipping to the grader and return shipping. With eBay's 13.25% fee and $0.40 per order, break-even = (total cost + shipping to buyer + $0.40) / 0.8675.
+
+### What odds of a 10 do I need for grading to pay off?
+It depends on the gap between the 10 price and the other grades. The calculator solves for the exact chance of a 10 at which the expected graded profit equals selling raw, keeping your other grades in the same proportions.
+
+### Which grading company is cheapest?
+For a card worth under $500 in a 25-card order, CGC Bulk at $17 is the cheapest open tier as of October 14, 2026. For single cards, SGC Standard at $50 and PSA Standard at $59.99 are the cheapest open options. The best company also depends on what each slab sells for, so compare expected profit, not just the fee.
+
+## Related tools
+- [Open Enrollment Calc](https://matt5516.github.io/open-enrollment-calc/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
+- [Fantasy Tools](https://matt5516.github.io/fantasy-tools/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
