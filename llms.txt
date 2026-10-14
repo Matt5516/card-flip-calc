@@ -87,3 +87,4 @@ For a card worth under $500 in a 25-card order, CGC Bulk at $17 is the cheapest 
 ## Related tools
 - [EnrollMath](https://matt5516.github.io/open-enrollment-calc/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
 - [DynastyMath](https://matt5516.github.io/fantasy-tools/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
+- [BagOrBulk](https://matt5516.github.io/material-calc/): Concrete, gravel, mulch and topsoil calculators: yards, tons, bags, and whether bags or bulk costs less.
