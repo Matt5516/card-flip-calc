@@ -3,7 +3,7 @@
 > Free card grading calculator: compare PSA, SGC, BGS and CGC fees, shipping and eBay fees to see profit, break-even and the odds of a 10 you need to submit.
 
 URL: https://gradeorflip.com/
-Last updated: 2026-10-14
+Last updated: 2026-10-15
 Cost: free, no signup, runs in the browser.
 
 ## Key facts
@@ -88,3 +88,4 @@ For a card worth under $500 in a 25-card order, CGC Bulk at $17 is the cheapest 
 - [EnrollMath](https://enrollmath.com/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
 - [DynastyMath](https://dynastymath.com/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
 - [BagOrBulk](https://bagorbulk.com/): Concrete, gravel, mulch and topsoil calculators: yards, tons, bags, and whether bags or bulk costs less.
+- [ClockInMath](https://matt5516.github.io/time-card-calc/): Time card calculator: weekly hours, decimal hours, overtime and gross pay, with a printable timesheet.
