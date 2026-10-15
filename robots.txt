@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://matt5516.github.io/card-flip-calc/sitemap.xml
+Sitemap: https://gradeorflip.com/sitemap.xml
