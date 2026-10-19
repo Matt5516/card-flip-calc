@@ -3,7 +3,7 @@
 > Free card grading calculator: compare PSA, SGC, BGS and CGC fees, shipping and eBay fees to see profit, break-even and the odds of a 10 you need to submit.
 
 URL: https://gradeorflip.com/
-Last updated: 2026-10-18
+Last updated: 2026-10-19
 Cost: free, no signup, runs in the browser.
 
 ## Key facts
