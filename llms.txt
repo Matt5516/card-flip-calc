@@ -3,7 +3,7 @@
 > Free card grading calculator: compare PSA, SGC, BGS and CGC fees, shipping and eBay fees to see profit, break-even and the odds of a 10 you need to submit.
 
 URL: https://gradeorflip.com/
-Last updated: 2026-10-17
+Last updated: 2026-10-18
 Cost: free, no signup, runs in the browser.
 
 ## Key facts
@@ -52,6 +52,31 @@ Cost: free, no signup, runs in the browser.
 - [Odds of a 10 you need](https://gradeorflip.com/gem-rate-break-even/): The chance of a PSA 10 you need before grading beats selling raw, by raw value and 10-to-raw price multiple. Table plus formula.
 - [Grading upcharges explained](https://gradeorflip.com/what-is-a-grading-upcharge/): Why graders bill extra when a card comes back worth more than its tier’s value cap, what it costs, and how to declare value to avoid surprises.
 - [How to submit cards](https://gradeorflip.com/how-to-submit-cards-for-grading/): A step-by-step checklist for submitting cards to PSA, SGC, Beckett or CGC: pick cards, pick a tier, pack safely, ship insured and track the return.
+- [PSA grading cost](https://gradeorflip.com/cost-to-grade-cards-psa/): PSA grading cost for 1 to 50 cards at the cheapest open tier (checked Oct 14, 2026), with assumed $40 shipping and cost per card.
+- [SGC grading cost](https://gradeorflip.com/cost-to-grade-cards-sgc/): SGC grading cost for 1 to 50 cards at the cheapest open tier (checked Oct 14, 2026), with assumed $40 shipping and cost per card.
+- [Cost to grade a card at CGC](https://gradeorflip.com/cost-to-grade-cards-cgc/): CGC grading cost for 1 to 50 cards at the cheapest open tier (checked Oct 14, 2026), with assumed $40 shipping and cost per card.
+- [Beckett (BGS) grading cost](https://gradeorflip.com/cost-to-grade-cards-bgs/): Beckett (BGS) grading cost for 1 to 50 cards at the cheapest open tier (checked Oct 14, 2026), with assumed $40 shipping and cost per card.
+- [Cost to grade 5 cards](https://gradeorflip.com/cost-to-grade-5-cards/): What it costs to grade 5 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
+- [Cost to grade 10 cards](https://gradeorflip.com/cost-to-grade-10-cards/): What it costs to grade 10 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
+- [Cost to grade 20 cards](https://gradeorflip.com/cost-to-grade-20-cards/): What it costs to grade 20 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
+- [Cost to grade 25 cards](https://gradeorflip.com/cost-to-grade-25-cards/): What it costs to grade 25 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
+- [Cost to grade 50 cards](https://gradeorflip.com/cost-to-grade-50-cards/): What it costs to grade 50 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
+- [Cost to grade 100 cards](https://gradeorflip.com/cost-to-grade-100-cards/): What it costs to grade 100 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
+- [Grading cost guide](https://gradeorflip.com/grading-cost-guide/): Card grading cost by grader and order size (1 to 100 cards), cheapest open tiers checked Oct 14, 2026, with links to every grader.
+- [PSA Value & Regular tier cost](https://gradeorflip.com/psa-value-and-regular-tier-cost/): PSA’s Value and Value Bulk tiers are paused as of Oct 14, 2026. See the tiers that are open, their prices and declared-value caps.
+- [Worth grading modern chrome refractors?](https://gradeorflip.com/is-it-worth-grading-modern-chrome-refractors/): Is grading modern chrome refractors worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading jersey and patch cards?](https://gradeorflip.com/is-it-worth-grading-jersey-patch-cards/): Is grading jersey and patch cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading basketball cards?](https://gradeorflip.com/is-it-worth-grading-basketball-cards/): Is grading basketball cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading football cards?](https://gradeorflip.com/is-it-worth-grading-football-cards/): Is grading football cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading baseball cards?](https://gradeorflip.com/is-it-worth-grading-baseball-cards/): Is grading baseball cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading hockey cards?](https://gradeorflip.com/is-it-worth-grading-hockey-cards/): Is grading hockey cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading soccer cards?](https://gradeorflip.com/is-it-worth-grading-soccer-cards/): Is grading soccer cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading Magic: The Gathering cards?](https://gradeorflip.com/is-it-worth-grading-magic-the-gathering-cards/): Is grading Magic: The Gathering cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading Yu-Gi-Oh! cards?](https://gradeorflip.com/is-it-worth-grading-yu-gi-oh-cards/): Is grading Yu-Gi-Oh! cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading One Piece cards?](https://gradeorflip.com/is-it-worth-grading-one-piece-cards/): Is grading One Piece cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
+- [Worth grading: by card type](https://gradeorflip.com/is-it-worth-grading-by-card-type/): Pick your card type, from Pokémon to hockey to One Piece, and see whether grading pays off with a worked break-even example for each.
+- [PSA 10 vs PSA 9 price multiple](https://gradeorflip.com/psa-10-vs-psa-9-price-multiple/): How many times raw a PSA 10 must sell for, given what a 9 sells for, so a 50/50 chance of 10 or 9 beats selling raw. Table by raw value.
+- [PSA 9 vs raw price multiple](https://gradeorflip.com/psa-9-vs-raw-price-multiple/): The sale price (and multiple of raw) a PSA 9 or any mid grade needs to cover card cost, PSA fee, shipping and eBay fees, by raw value.
 
 ## FAQ
 ### Is it worth grading my card?
