@@ -20,7 +20,7 @@
       '<a rel="nofollow noopener" target="_blank" href="https://www.ebay.com/sch/i.html?_nkw='+encodeURIComponent(q+' PSA 9')+'&LH_Sold=1&LH_Complete=1">PSA 9 sold</a>',
       '<a rel="nofollow noopener" target="_blank" href="https://130point.com/sales/">130point sales search</a>',
       '<a rel="nofollow noopener" target="_blank" href="https://www.psacard.com/pop">PSA pop report</a>',
-      '<a rel="nofollow noopener" target="_blank" href="https://www.gosgc.com/pop-report">SGC pop report</a>'].join(''):'<span class="hint">Type a card to get one-tap sold-price and pop-report links.</span>'; }
+      '<a rel="nofollow noopener" target="_blank" href="https://www.gosgc.com/pop-report">SGC pop report</a>'].join(''):'<span class="hint">Type a card name. Get sold-price and pop-report links.</span>'; }
   // Saved cards (this browser only)
   var SKEY='gof-saved';
   function renderSaved(){ var L=UI.store.get(SKEY,[]), box=$('saved'); if(!box) return;
@@ -55,11 +55,11 @@
     var g=grader(), t=currentTier(), cards=Math.max(1,Math.round(n('cards')));
     var key=$('company').value+'|'+$('tier').value+'|'+(t?t.name:'');
     if (key!==lastTierKey){ lastTierKey=key; $('gradingFee').value=t?t.fee:''; }
-    $('tierNote').textContent = t ? ((t.days?'About '+t.days+' business days. ':'')+(t.maxValue?'Max declared value $'+t.maxValue.toLocaleString()+'. ':'No value cap listed. ')+g.note) : 'No '+$('company').value+' tier covers a card worth '+m(declared(),true)+'. Pick a tier manually or another grader.';
-    var sum=0; for(var i=0;i<4;i++) sum+=n('gp'+i); $('oddsSum').textContent='They add up to '+Math.round(sum)+'%'+(Math.round(sum)!==100?' (we rescale them to 100%).':'.');
+    $('tierNote').textContent = t ? ((t.days?'About '+t.days+' business days. ':'')+(t.maxValue?'Max declared value $'+t.maxValue.toLocaleString()+'. ':'No value cap listed. ')+g.note) : 'No '+$('company').value+' tier covers a card worth '+m(declared(),true)+'. Pick a tier yourself or try another grader.';
+    var sum=0; for(var i=0;i<4;i++) sum+=n('gp'+i); $('oddsSum').textContent='They add up to '+Math.round(sum)+'%'+(Math.round(sum)!==100?' (we scale them to 100%).':'.');
     var R=$('results'), errs=validate();
-    if (errs.length){ R.innerHTML='<div class="alert err">'+UI.icon('alert')+'<div>Some numbers are negative or invalid. Fix the highlighted fields.</div></div>'; return; }
-    if (!(n('gv0')||n('gv1')||n('gv2')||n('gv3'))){ R.innerHTML='<div class="empty">'+UI.icon('card')+'<p><strong>Add graded sale prices</strong><br>Enter what the card sells for at grade 10, 9, 8 and 7 to see your profit.</p></div>'; return; }
+    if (errs.length){ R.innerHTML='<div class="alert err">'+UI.icon('alert')+'<div>Fix the highlighted fields. Numbers can’t be negative.</div></div>'; return; }
+    if (!(n('gv0')||n('gv1')||n('gv2')||n('gv3'))){ R.innerHTML='<div class="empty">'+UI.icon('card')+'<p><strong>Add graded sold prices</strong><br>Enter what a 10, 9, 8 and 7 sell for. Your profit shows up here.</p></div>'; return; }
     var fee=$('gradingFee').value===''?(t?t.fee:0):n('gradingFee');
     var base=inputsBase(fee,t?t.maxValue:null), r=FlipCalc.analyze(base);
     var need=FlipCalc.topGradeOddsNeeded(r.rows, r.rawProfit===null?0:r.rawProfit), win=FlipCalc.lowestWinningGrade(r.rows,r.rawProfit);
@@ -82,8 +82,8 @@
     h+='<h3 style="margin-top:18px">Best grader for this card</h3><p class="hint" style="margin-top:0">Each company at its cheapest open tier for a card worth '+m(declared(),true)+'.</p><div class="table-scroll"><table><thead><tr><th scope="col">Grader</th><th scope="col">Tier</th><th scope="col">Fee</th><th scope="col">Days</th><th scope="col">Expected</th></tr></thead><tbody>';
     cmp.forEach(function(c,i){ if(!c.available){ h+='<tr><td>'+c.grader+'</td><td colspan="4" style="text-align:right"><span class="badge">no tier covers this value</span></td></tr>'; return; }
       var ev=c.expected!==null?c.expected:c.top; h+='<tr class="'+(i===0?'best':'')+'"><td><strong>'+c.grader+'</strong>'+(i===0?' <span class="badge good">best</span>':'')+'</td><td>'+UI.esc(c.tier.name.replace(/\s*\(.*\)/,''))+'</td><td>'+m(c.tier.fee)+'</td><td>'+(c.tier.days||'—')+'</td><td class="'+UI.cls(ev)+'">'+UI.signed(ev)+'</td></tr>'; });
-    h+='</tbody></table></div><p class="hint">Assumes the same sale prices for every company. In practice PSA slabs often sell for more than others, so adjust the prices if you compare.</p>';
-    if (r.rows.some(function(x){return x.overTier;})) h+='<div class="alert">'+UI.icon('alert')+'<div>One or more grade values are above this tier\'s max declared value. The grader may move the card up a tier and bill the difference.</div></div>';
+    h+='</tbody></table></div><p class="hint">Same sale prices for every company. PSA slabs often sell for more, so adjust the prices when you compare.</p>';
+    if (r.rows.some(function(x){return x.overTier;})) h+='<div class="alert">'+UI.icon('alert')+'<div>Some grade values top this tier\'s max declared value. The grader may bump the card up a tier and bill you the difference.</div></div>';
     h+='<div class="actions"><button type="button" class="btn sm" id="saveBtn">'+UI.icon('check')+'Save card</button><button type="button" class="btn ghost sm" data-print>'+UI.icon('copy')+'Print / PDF</button><button type="button" class="btn sm" id="shareBtn">'+UI.icon('share')+'Share result</button><button type="button" class="btn ghost sm" id="copyBtn">'+UI.icon('copy')+'Copy summary</button><button type="button" class="btn ghost sm" id="linkBtn">'+UI.icon('link')+'Copy link</button></div>';
     R.innerHTML=h; lastRec=r.rec;
     lastSummary='Card grading check ('+$('company').value+(t?' '+t.name.replace(/\s*\(.*\)/,''):'')+'): '+(r.rec.word||'')+'. '+

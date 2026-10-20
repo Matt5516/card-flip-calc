@@ -1,13 +1,13 @@
 # GradeOrFlip
 
-> Free card grading calculator: compare PSA, SGC, BGS and CGC fees, shipping and eBay fees to see profit, break-even and the odds of a 10 you need to submit.
+> Is it worth grading? Compare PSA, SGC, BGS and CGC fees, shipping and eBay fees. See profit, break-even and the odds of a 10 you need to submit.
 
 URL: https://gradeorflip.com/
 Last updated: 2026-10-19
 Cost: free, no signup, runs in the browser.
 
 ## Key facts
-- GradeOrFlip compares selling a trading card raw against grading it with PSA, SGC, BGS or CGC, after grading fees, shipping and eBay fees.
+- GradeOrFlip helps you decide whether to sell a trading card raw or grade it with PSA, SGC, BGS or CGC, after grading fees, shipping and eBay fees.
 - Formula: net profit at a grade = sale price - eBay fees - shipping to buyer - (card cost + grading fee + shipping to grader + return shipping).
 - eBay trading card fee (Oct 2026): 13.25% of total sale up to $7,500 + 2.35% above, + $0.40 per order ($0.30 if $10 or less).
 - PSA (Oct 14, 2026): Standard $59.99 (≤$1,000), Priority $79.99 (≤$1,500), Express $199 (≤$2,500), Super Express $349, Premier $599. Value tiers paused.
@@ -17,11 +17,11 @@ Cost: free, no signup, runs in the browser.
 - Worked example: $40 card, $60 raw, PSA Standard $59.99, $5 in, $8 back, $5 out: total cost $112.99, break-even graded sale $136.47, PSA 10 at $150 nets $11.73 vs $6.65 raw.
 
 ## Tools (one page each)
-- [Grading calculator](https://gradeorflip.com/grading-calculator/): Free card grading calculator. Enter the raw price and what a 10 and a 9 sell for to see profit after grading fees, shipping and eBay fees, plus your break-even odds. How it works: We compare selling raw with grading: the chance of each grade × its sold price, minus the grading fee, shipping and eBay fees. Fees are 2026 official prices.
-- [Bulk submission planner](https://gradeorflip.com/bulk-planner/): List your cards with raw and graded prices. The planner splits shipping, picks the cheapest tier and tells you which cards to send for grading. How it works: Each card is checked like the main calculator; shipping is split across the order, and bulk tiers unlock automatically at their minimums.
-- [eBay fee calculator](https://gradeorflip.com/ebay-fee-calculator/): Free eBay fee calculator for trading cards: final value fee, per-order fee, sales tax and shipping, with your take-home and profit for any sale price. How it works: eBay charges its trading-card final value fee on the total including shipping and sales tax, plus a per-order fee. Rates are editable under Advanced options.
-- [Turnaround tracker](https://gradeorflip.com/turnaround-tracker/): Track PSA, SGC, CGC and BGS submissions in one list. Enter the date you shipped and the tier to see an estimated return date. Saved only in your browser. How it works: We add the grader’s posted business-day turnaround for your tier to the date they received your order. Estimates only; graders’ real times vary.
-- [Submission checklist](https://gradeorflip.com/submission-checklist/): A printable 12-step checklist for submitting cards to PSA, SGC, CGC or BGS: cleaning, sleeves, declared values, packing and insurance. Saved in your browser. How it works: Tick items as you finish them; your progress stays in this browser. Print it to keep with your order.
+- [Grading calculator](https://gradeorflip.com/grading-calculator/): Free card grading calculator. Enter the raw price and what a 10 and a 9 sell for to see profit after grading fees, shipping and eBay fees, plus your break-even odds. The math: Raw vs graded: the chance of each grade × its sold price, minus the grading fee, shipping and eBay fees. Fees are 2026 official prices.
+- [Bulk submission planner](https://gradeorflip.com/bulk-planner/): List your cards with raw and graded prices. The planner splits shipping, picks the cheapest tier and tells you which cards to send for grading. The math: Each card is checked like the main calculator; shipping is split across the order, and bulk tiers unlock automatically at their minimums.
+- [eBay fee calculator](https://gradeorflip.com/ebay-fee-calculator/): Free eBay fee calculator for trading cards: final value fee, per-order fee, sales tax and shipping, with your take-home and profit for any sale price. The math: eBay charges its trading-card final value fee on the total including shipping and sales tax, plus a per-order fee. Rates are editable under Advanced options.
+- [Turnaround tracker](https://gradeorflip.com/turnaround-tracker/): Track PSA, SGC, CGC and BGS submissions in one list. Enter the date you shipped and the tier to see an estimated return date. Saved only in your browser. The math: The grader’s posted business-day turnaround for your tier, counted from the date they received your order. Estimates only; real times vary.
+- [Submission checklist](https://gradeorflip.com/submission-checklist/): A printable 12-step checklist for submitting cards to PSA, SGC, CGC or BGS: cleaning, sleeves, declared values, packing and insurance. Saved in your browser. The math: Tick items as you finish them; your progress stays in this browser. Print it to keep with your order.
 
 ## Guides
 - [PSA grading fees 2026](https://gradeorflip.com/psa-grading-fees/): PSA grading prices as of Oct 14, 2026: every service tier, max declared value, turnaround and the sale price a card needs to cover the fee.
@@ -52,17 +52,17 @@ Cost: free, no signup, runs in the browser.
 - [Odds of a 10 you need](https://gradeorflip.com/gem-rate-break-even/): The chance of a PSA 10 you need before grading beats selling raw, by raw value and 10-to-raw price multiple. Table plus formula.
 - [Grading upcharges explained](https://gradeorflip.com/what-is-a-grading-upcharge/): Why graders bill extra when a card comes back worth more than its tier’s value cap, what it costs, and how to declare value to avoid surprises.
 - [How to submit cards](https://gradeorflip.com/how-to-submit-cards-for-grading/): A step-by-step checklist for submitting cards to PSA, SGC, Beckett or CGC: pick cards, pick a tier, pack safely, ship insured and track the return.
-- [PSA grading cost](https://gradeorflip.com/cost-to-grade-cards-psa/): PSA grading cost for 1 to 50 cards at the cheapest open tier (checked Oct 14, 2026), with assumed $40 shipping and cost per card.
-- [SGC grading cost](https://gradeorflip.com/cost-to-grade-cards-sgc/): SGC grading cost for 1 to 50 cards at the cheapest open tier (checked Oct 14, 2026), with assumed $40 shipping and cost per card.
-- [Cost to grade a card at CGC](https://gradeorflip.com/cost-to-grade-cards-cgc/): CGC grading cost for 1 to 50 cards at the cheapest open tier (checked Oct 14, 2026), with assumed $40 shipping and cost per card.
-- [Beckett (BGS) grading cost](https://gradeorflip.com/cost-to-grade-cards-bgs/): Beckett (BGS) grading cost for 1 to 50 cards at the cheapest open tier (checked Oct 14, 2026), with assumed $40 shipping and cost per card.
-- [Cost to grade 5 cards](https://gradeorflip.com/cost-to-grade-5-cards/): What it costs to grade 5 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
-- [Cost to grade 10 cards](https://gradeorflip.com/cost-to-grade-10-cards/): What it costs to grade 10 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
-- [Cost to grade 20 cards](https://gradeorflip.com/cost-to-grade-20-cards/): What it costs to grade 20 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
-- [Cost to grade 25 cards](https://gradeorflip.com/cost-to-grade-25-cards/): What it costs to grade 25 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
-- [Cost to grade 50 cards](https://gradeorflip.com/cost-to-grade-50-cards/): What it costs to grade 50 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
-- [Cost to grade 100 cards](https://gradeorflip.com/cost-to-grade-100-cards/): What it costs to grade 100 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, shipping assumed, checked Oct 14, 2026.
-- [Grading cost guide](https://gradeorflip.com/grading-cost-guide/): Card grading cost by grader and order size (1 to 100 cards), cheapest open tiers checked Oct 14, 2026, with links to every grader.
+- [PSA grading cost](https://gradeorflip.com/cost-to-grade-cards-psa/): PSA grading cost for 1 to 50 cards at the cheapest open tier (as of Oct 14, 2026), with $40 shipping and cost per card.
+- [SGC grading cost](https://gradeorflip.com/cost-to-grade-cards-sgc/): SGC grading cost for 1 to 50 cards at the cheapest open tier (as of Oct 14, 2026), with $40 shipping and cost per card.
+- [Cost to grade a card at CGC](https://gradeorflip.com/cost-to-grade-cards-cgc/): CGC grading cost for 1 to 50 cards at the cheapest open tier (as of Oct 14, 2026), with $40 shipping and cost per card.
+- [Beckett (BGS) grading cost](https://gradeorflip.com/cost-to-grade-cards-bgs/): Beckett (BGS) grading cost for 1 to 50 cards at the cheapest open tier (as of Oct 14, 2026), with $40 shipping and cost per card.
+- [Cost to grade 5 cards](https://gradeorflip.com/cost-to-grade-5-cards/): What it costs to grade 5 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, with shipping, as of Oct 14, 2026.
+- [Cost to grade 10 cards](https://gradeorflip.com/cost-to-grade-10-cards/): What it costs to grade 10 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, with shipping, as of Oct 14, 2026.
+- [Cost to grade 20 cards](https://gradeorflip.com/cost-to-grade-20-cards/): What it costs to grade 20 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, with shipping, as of Oct 14, 2026.
+- [Cost to grade 25 cards](https://gradeorflip.com/cost-to-grade-25-cards/): What it costs to grade 25 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, with shipping, as of Oct 14, 2026.
+- [Cost to grade 50 cards](https://gradeorflip.com/cost-to-grade-50-cards/): What it costs to grade 50 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, with shipping, as of Oct 14, 2026.
+- [Cost to grade 100 cards](https://gradeorflip.com/cost-to-grade-100-cards/): What it costs to grade 100 cards at PSA, SGC, CGC and Beckett at each grader’s cheapest open tier, with shipping, as of Oct 14, 2026.
+- [Grading cost guide](https://gradeorflip.com/grading-cost-guide/): Card grading cost by grader and order size (1 to 100 cards), cheapest open tiers as of Oct 14, 2026, with links to every grader.
 - [PSA Value & Regular tier cost](https://gradeorflip.com/psa-value-and-regular-tier-cost/): PSA’s Value and Value Bulk tiers are paused as of Oct 14, 2026. See the tiers that are open, their prices and declared-value caps.
 - [Worth grading modern chrome refractors?](https://gradeorflip.com/is-it-worth-grading-modern-chrome-refractors/): Is grading modern chrome refractors worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
 - [Worth grading jersey and patch cards?](https://gradeorflip.com/is-it-worth-grading-jersey-patch-cards/): Is grading jersey and patch cards worth it? Worked break-even example with grading fee, shipping, eBay fees and adjustable grade odds, plus what to check.
@@ -80,7 +80,7 @@ Cost: free, no signup, runs in the browser.
 
 ## FAQ
 ### Is it worth grading my card?
-Grading is worth it when the probability-weighted profit from selling graded beats what you would net selling raw today, after grading fees, shipping both ways and selling fees. If only a 10 makes money and your odds of a 10 are low, selling raw is usually better.
+Grade it when the odds-weighted profit from selling graded beats what you would net selling raw today, after grading fees, shipping both ways and selling fees. If only a 10 makes money and your odds of a 10 are low, sell raw.
 
 ### How much does PSA grading cost in 2026?
 As of October 14, 2026, PSA charges $59.99 per card for Standard (up to $1,000 declared value, 90-100 business days), $79.99 for Priority (up to $1,500), $199 for Express (up to $2,500), $349 for Super Express (up to $5,000) and $599 for Premier (up to $10,000). PSA's Value and Value Bulk tiers are paused.
@@ -98,21 +98,21 @@ As of October 14, 2026, CGC Cards charges $17 per card for Bulk (25-card minimum
 eBay's standard final value fee for trading cards is 13.25% of the total sale up to $7,500, plus 2.35% on the portion above $7,500, plus a $0.40 per-order fee ($0.30 if the order is $10 or less). The total includes shipping charged to the buyer and sales tax.
 
 ### What is a grading upcharge?
-An upcharge happens when the grader decides your card is worth more than the maximum declared value of the tier you paid for. They move it to a higher tier and bill you the difference. This calculator warns you when any grade value is above the selected tier's limit.
+An upcharge happens when the grader decides your card is worth more than the max declared value of the tier you paid for. They bump it to a higher tier and bill you the difference. The calculator warns you when any grade value tops the selected tier's limit.
 
 ### How do I calculate the break-even price for a graded card?
 Break-even is the lowest sale price where the money left after selling fees and shipping covers your total cost: what you paid for the card plus grading fee, shipping to the grader and return shipping. With eBay's 13.25% fee and $0.40 per order, break-even = (total cost + shipping to buyer + $0.40) / 0.8675.
 
 ### What odds of a 10 do I need for grading to pay off?
-It depends on the gap between the 10 price and the other grades. The calculator solves for the exact chance of a 10 at which the expected graded profit equals selling raw, keeping your other grades in the same proportions.
+It depends on the gap between the 10 price and your other grades. The calculator finds the exact chance of a 10 where expected graded profit equals selling raw, keeping your other grades in the same proportions.
 
 ### Which grading company is cheapest?
 For a card worth under $500 in a 25-card order, CGC Bulk at $17 is the cheapest open tier as of October 14, 2026. For single cards, SGC Standard at $50 and PSA Standard at $59.99 are the cheapest open options. The best company also depends on what each slab sells for, so compare expected profit, not just the fee.
 
 ## Related tools
 - [EnrollMath](https://enrollmath.com/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
-- [DynastyMath](https://dynastymath.com/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
+- [DynastyMath](https://dynastymath.com/): Start/sit calls, a dynasty trade calculator with picks, and Sleeper league import.
 - [BagOrBulk](https://bagorbulk.com/): Concrete, gravel, mulch and topsoil calculators: yards, tons, bags, and whether bags or bulk costs less.
 - [ClockInMath](https://matt5516.github.io/time-card-calc/): Time card calculator: weekly hours, decimal hours, overtime and gross pay, with a printable timesheet.
-- [CoatMath](https://matt5516.github.io/paint-calc/): Paint calculator that picks the cheapest cans to buy: gallons, quarts and 5-gallon buckets.
+- [CoatMath](https://matt5516.github.io/paint-calc/): Tells you how much paint to buy and the cheapest cans for it: gallons, quarts and 5-gallon buckets.
 - [SidewallMath](https://matt5516.github.io/tire-size-calc/): Tire size calculator: compare two sizes, true speedometer, sizes that fit your wheel, regear and wheel offset.

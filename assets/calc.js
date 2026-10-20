@@ -39,15 +39,15 @@
     });
     var expected = probSum>0 ? round2(ev/probSum) : null;
     var rec;
-    if (!rows.length) rec = {level:'warn', word:'Add values', text:'Enter at least one expected graded value.'};
+    if (!rows.length) rec = {level:'warn', word:'Add values', text:'Add at least one graded value.'};
     else {
       var cmp = expected!==null ? expected : rows[0].profit; // fall back to best listed grade
       var basis = expected!==null ? 'probability-weighted' : 'top-grade';
       if (rawProfit!==null && cmp <= rawProfit) rec = {level:'bad', word:'Sell raw', text:'Sell raw. Your '+basis+' graded profit ('+fmt(cmp)+') does not beat selling raw ('+fmt(rawProfit)+').'};
       else if (cmp < 0) rec = {level:'bad', word:'Skip it', text:'Skip grading. The '+basis+' result is a loss of '+fmt(-cmp)+'.'};
-      else if (rawProfit!==null && cmp - rawProfit < gradeCost*0.5) rec = {level:'warn', word:'Borderline', text:'Borderline. Grading adds only '+fmt(cmp-rawProfit)+' over selling raw for the risk and wait. Grade only if you are confident in the grade.'};
+      else if (rawProfit!==null && cmp - rawProfit < gradeCost*0.5) rec = {level:'warn', word:'Borderline', text:'Borderline. Grading adds just '+fmt(cmp-rawProfit)+' over raw, for the risk and the wait. Grade only if you’re sure of the grade.'};
       else rec = {level:'good', word:'Grade it', text:'Grade it. The '+basis+' profit is '+fmt(cmp)+(rawProfit!==null?' vs '+fmt(rawProfit)+' selling raw':'')+'.'};
-      if (expected===null) rec.text += ' Add grade odds for a more realistic answer.';
+      if (expected===null) rec.text += ' Add grade odds for a sharper answer.';
     }
     return {gradeCost:round2(gradeCost), totalCost:round2(totalCost), rawFees:rawFees, rawProfit:rawProfit, breakEven:be, rows:rows, expected:expected, rec:rec};
   }
